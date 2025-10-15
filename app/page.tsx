@@ -20,18 +20,18 @@ export default function HomePage() {
 
         <div className="container relative z-10 mx-auto max-w-6xl px-6">
           <div className="grid items-center gap-10 md:grid-cols-2">
-            <div className="will-reveal max-w-2xl rounded-2xl border border-white/10 bg-black/40 p-6 shadow-2xl backdrop-blur-md md:p-8">
-              <h1 className="text-pretty text-4xl font-semibold tracking-tight md:text-5xl">Revive Your Ride — Precision Detailing. Ceramic Brilliance.</h1>
-              <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">Premium interior, exterior, and ceramic coating services throughout Davis County & Salt Lake City, Utah.</p>
+            <div className="will-reveal max-w-4xl">
+              <h1 className="text-pretty text-4xl font-semibold tracking-tight md:text-6xl drop-shadow-lg">Revive Your Ride — Precision Detailing. Ceramic Brilliance.</h1>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-xl drop-shadow">Premium interior, exterior, and ceramic coating services throughout Davis County & Salt Lake City, Utah.</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#contact" className="btn-liquid">Get a Free Quote</a>
                 <a href="#services" className="btn-outline">Explore Services</a>
               </div>
-              <ul className="mt-8 grid grid-cols-1 gap-3 text-sm text-muted-foreground sm:grid-cols-2">
-                <li className="rounded-lg border border-white/10 bg-white/5 p-3">Mobile or in‑shop service</li>
-                <li className="rounded-lg border border-white/10 bg-white/5 p-3">Paint correction & ceramic coating</li>
-                <li className="rounded-lg border border-white/10 bg-white/5 p-3">Interior restoration & odor neutralization</li>
-                <li className="rounded-lg border border-white/10 bg-white/5 p-3">Serving Davis County & SLC</li>
+              <ul className="mt-8 flex flex-wrap items-center gap-3 text-sm text-muted-foreground">
+                <li className="rounded-lg border border-white/10 bg-black/30 px-3 py-2">Mobile or in‑shop service</li>
+                <li className="rounded-lg border border-white/10 bg-black/30 px-3 py-2">Paint correction & ceramic coating</li>
+                <li className="rounded-lg border border-white/10 bg-black/30 px-3 py-2">Interior restoration & odor neutralization</li>
+                <li className="rounded-lg border border-white/10 bg-black/30 px-3 py-2">Serving Davis County & SLC</li>
               </ul>
             </div>
             <div className="will-reveal hidden md:block" />
