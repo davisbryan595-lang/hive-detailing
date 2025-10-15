@@ -16,10 +16,10 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
         <a href="#home" className="flex items-center gap-3">
           <Image
-            src="/placeholder-logo.svg"
+            src="https://cdn.builder.io/api/v1/image/assets%2Fe956acbb04e54fb896c83542bdb88b2d%2Fa266d742321b4ac3a057707133d6628c?format=webp&width=800"
             alt="Hive Detailing logo"
-            width={160}
-            height={40}
+            width={200}
+            height={50}
             className="h-8 w-auto md:h-10"
             priority
           />
