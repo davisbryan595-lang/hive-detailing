@@ -33,7 +33,7 @@ export default function Testimonials() {
   const t = DATA[idx]
 
   return (
-    <section id="testimonials" className="section">
+    <section id="testimonials" className="section min-h-dvh flex items-center">
       <div className="mx-auto max-w-4xl px-4 text-center will-reveal">
         <h2 className="text-3xl font-semibold md:text-4xl">What Clients Say</h2>
         <div className="mt-6 rounded-2xl border border-border bg-card p-6 shadow-xl transition-transform">

@@ -26,10 +26,9 @@ export default function BeforeAfter({
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden rounded-xl border border-border bg-card shadow-xl"
-      style={{ aspectRatio: "16 / 9" }}
-      onMouseMove={(e) => e.buttons === 1 && updateFromClientX(e.clientX)}
-      onMouseDown={(e) => updateFromClientX(e.clientX)}
+      className="relative w-full overflow-hidden rounded-xl border border-border bg-card shadow-xl aspect-video cursor-ew-resize"
+      onMouseMove={(e) => updateFromClientX(e.clientX)}
+      onMouseEnter={(e) => updateFromClientX(e.clientX)}
       onTouchMove={(e) => updateFromClientX(e.touches[0].clientX)}
       onTouchStart={(e) => updateFromClientX(e.touches[0].clientX)}
       aria-label="Before and after slider"
