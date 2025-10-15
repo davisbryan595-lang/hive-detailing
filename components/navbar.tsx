@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import Image from "next/image"
 
 const links = [
@@ -12,23 +11,12 @@ const links = [
 ]
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 10)
-    onScroll()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
-
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${scrolled ? "bg-nav/90 backdrop-blur-md hive-glow" : "bg-transparent"}`}
-    >
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md hive-glow">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:py-4">
         <a href="#home" className="flex items-center gap-3">
           <Image
-            src="/images/hive-logo.jpg"
+            src="/placeholder-logo.svg"
             alt="Hive Detailing logo"
             width={160}
             height={40}
@@ -47,12 +35,8 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="#contact" className="btn-liquid hidden md:inline-block" aria-label="Book Now">
+        <a href="#contact" className="btn-liquid" aria-label="Book Now">
           Book Now
-        </a>
-
-        <a href="#contact" className="btn-liquid md:hidden text-sm px-3 py-2" aria-label="Book Now">
-          Book
         </a>
       </nav>
     </header>
