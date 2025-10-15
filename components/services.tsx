@@ -3,7 +3,7 @@ export default function Services() {
     {
       title: "Interior Detailing",
       desc: "Deep clean, steam, and protect upholstery, carpets, plastics, and leather.",
-      img: "https://images.pexels.com/photos/6870395/pexels-photo-6870395.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1200",
+      img: "/servicee1.jpg",
     },
     {
       title: "Exterior Detailing",
