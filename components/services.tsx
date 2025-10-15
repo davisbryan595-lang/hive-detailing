@@ -23,8 +23,8 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" className="section">
-      <div className="mx-auto max-w-6xl px-4">
+    <section id="services" className="section min-h-dvh flex items-center">
+      <div className="mx-auto max-w-6xl px-4 w-full">
         <header className="mb-8 text-center">
           <h2 className="text-3xl font-semibold md:text-4xl">Premium Detailing Services</h2>
           <p className="mx-auto mt-2 max-w-2xl text-muted-foreground">
@@ -34,7 +34,10 @@ export default function Services() {
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {cards.map((c) => (
-            <article key={c.title} className="card will-reveal group">
+            <article
+              key={c.title}
+              className="card will-reveal group transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_1.25rem_color-mix(in_oklch,var(--primary)_35%,transparent)] hover:border-primary/40"
+            >
               <div className="relative h-44 overflow-hidden rounded-t-xl">
                 <img
                   src={c.img || "/placeholder.svg"}
