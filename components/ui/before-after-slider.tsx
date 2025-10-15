@@ -26,8 +26,7 @@ export default function BeforeAfter({
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden rounded-xl border border-border bg-card shadow-xl"
-      style={{ aspectRatio: "16 / 9" }}
+      className="relative w-full overflow-hidden rounded-xl border border-border bg-card shadow-xl aspect-video"
       onMouseMove={(e) => e.buttons === 1 && updateFromClientX(e.clientX)}
       onMouseDown={(e) => updateFromClientX(e.clientX)}
       onTouchMove={(e) => updateFromClientX(e.touches[0].clientX)}
