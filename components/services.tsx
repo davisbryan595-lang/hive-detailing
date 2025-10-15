@@ -13,7 +13,7 @@ export default function Services() {
     {
       title: "Ceramic Coating",
       desc: "Durable hydrophobic protection with intense gloss and easier maintenance.",
-      img: "https://images.pexels.com/photos/97075/pexels-photo-97075.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1200",
+      img: "/downloadh.jpg",
     },
     {
       title: "Engine Bay Cleaning",
